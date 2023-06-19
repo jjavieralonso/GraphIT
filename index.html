@@ -45,27 +45,31 @@
             <h1>GraphIT</h1>
             <label for="graphName">Nombre del gráfico: </label>
             <input id="graphName" type="text" maxlength="50" placeholder="Nombre del gráfico">
+            <label for="chartType">Tipo de Gráfico:</label>
+            <select id="chartType">
+                <option value="bar">Barra</option>
+                <option value="pie">Torta</option>
+                <option value="line">Línea</option>
+                <option value="area">Área</option>
+            </select>
 
             <form id="chartForm">
-                <label for="chartType">Tipo de Gráfico:</label>
-                <select id="chartType">
-                    <option value="bar">Barra</option>
-                    <option value="pie">Torta</option>
-                    <option value="line">Línea</option>
-                    <option value="area">Área</option>
-                </select>
-                <label for="dataInput">Datos:</label>
-                <div id="dataInputs">
-                    <div class="dataInput">
-                        <input type="color" id="color-input" class="color-input-style">
-                        <input type="text" placeholder="Título del dato" />
-                        <input type="number" placeholder="Valor" />
+                <div id="serie1">
+                    <label for="dataInput">Serie de Datos 1:</label>
+                    <button type="button" id="addDataBtnSerie1">Agregar dato</button>
+                    <button type="button" id="deleteDataBtnSerie1">Borrar ultimo dato</button>
+                    <div id="Serie1DataInputs">
+                        <div class="dataInput">
+                            <input type="color" id="color-input-1-1" class="color-input-style" placeholder="Color"><!--esa id es porque es serie 1 dato 1-->
+                            <input type="text" placeholder="Título del dato" />
+                            <input type="number" placeholder="Valor" />
+                        </div>
                     </div>
                 </div>
-                <button type="button" id="addDataBtn">Agregar dato</button>
-                <button type="button" id="deleteDataBtn">Borrar ultimo dato</button>
-                <button type="submit" class="generate-chart">Generar gráfico</button>
             </form>
+            <button type="submit" class="generate-chart" form="chartForm">Generar gráfico</button>
+            <button type="button" id="addSerieBtn">Agregar Serie</button>
+            <button type="button" id="deleteSerieBtn">Borrar ultima Serie</button>
         </div>
 
         <div id="chartContainer"></div>

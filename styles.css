@@ -81,11 +81,12 @@ select {
     margin-bottom: 10px;
 }
 
+.dataInputGenerado,
 .dataInput {
     display: flex;
     margin-bottom: 5px;
 }
-
+.dataInputGenerado,
 .dataInput input {
     margin-right: 5px;
 }
