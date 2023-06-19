@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var addSerieBtn = document.getElementById('addSerieBtn');
     var deleteSerieBtn = document.getElementById('deleteSerieBtn');
     var serieContainerCount = 2;
-    var dataInputsCount = 1;
-    var dataInputsContainers = {};
     var addDataBtns = {};
     var deleteDataBtns = {};
     updateBtnsToSeries();
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var colorInput = document.createElement('input');
         colorInput.type = 'color';
         colorInput.classList.add('color-input-style');
-        var idValue = 'color-input-' + numSerie + "-" + (countOfDatosInSerie(numSerie)+1);
+        var idValue = 'color-input-' + numSerie + "-" + (countOfDatosInSerie(numSerie) + 1);
         colorInput.setAttribute('id', idValue);
         colorInput.placeholder = 'Color';
 

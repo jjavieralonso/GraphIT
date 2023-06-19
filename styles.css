@@ -81,14 +81,14 @@ select {
     margin-bottom: 10px;
 }
 
-.dataInputGenerado,
 .dataInput {
     display: flex;
     margin-bottom: 5px;
 }
-.dataInputGenerado,
+
 .dataInput input {
     margin-right: 5px;
+    margin-top: 10px;
 }
 
 button {
@@ -112,13 +112,12 @@ button:hover {
     background-color: #495057;
 }
 
-button#deleteDataBtn {
+button#deleteSerieBtn{
     background-color: #dc3545;
     color: #fff;
-    margin-left: 25px;
 }
 
-button#deleteDataBtn:hover {
+button#deleteSerieBtn:hover {
     background-color: #b02a37;
 }
 

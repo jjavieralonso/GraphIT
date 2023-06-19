@@ -60,16 +60,19 @@
                     <button type="button" id="deleteDataBtnSerie1">Borrar ultimo dato</button>
                     <div id="Serie1DataInputs">
                         <div class="dataInput">
-                            <input type="color" id="color-input-1-1" class="color-input-style" placeholder="Color"><!--esa id es porque es serie 1 dato 1-->
+                            <input type="color" id="color-input-1-1" class="color-input-style"
+                                placeholder="Color"><!--esa id es porque es serie 1 dato 1-->
                             <input type="text" placeholder="Título del dato" />
                             <input type="number" placeholder="Valor" />
                         </div>
                     </div>
                 </div>
             </form>
-            <button type="submit" class="generate-chart" form="chartForm">Generar gráfico</button>
-            <button type="button" id="addSerieBtn">Agregar Serie</button>
-            <button type="button" id="deleteSerieBtn">Borrar ultima Serie</button>
+            <div>
+                <button type="button" id="addSerieBtn">Agregar Serie</button>
+                <button type="button" id="deleteSerieBtn">Borrar ultima Serie</button>
+                <button type="submit" class="generate-chart" form="chartForm">Generar gráfico</button>
+            </div>
         </div>
 
         <div id="chartContainer"></div>
